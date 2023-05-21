@@ -62,7 +62,7 @@ TEMPLATES = [
         },
     },
 ]
-c
+
 WSGI_APPLICATION = 'core.wsgi.application'
 
 
