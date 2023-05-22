@@ -8,3 +8,8 @@ class NewsListSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+class NewsDetailSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = News
+        fields = '__all__'
+

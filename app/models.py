@@ -21,6 +21,13 @@ class News(models.Model):
         verbose_name='Дата изменения',
         auto_now=True
     )
+    type_coffee = models.PositiveSmallIntegerField(
+        choices=(
+            (1, 'Зеленый кофе'),
+            (2, 'Обжаренный кофе')
+        ),
+        verbose_name='Тип кофе'
+    )
 
     def __str__(self):
         return self.header
