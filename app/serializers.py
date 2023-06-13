@@ -13,3 +13,8 @@ class NewsDetailSerializer(serializers.ModelSerializer):
         model = News
         fields = '__all__'
 
+
+class EmailSendSerializer(serializers.Serializer):
+    name = serializers.CharField()
+    email = serializers.EmailField()
+    comment = serializers.CharField()
